@@ -5,6 +5,11 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 100px);
+  gap: 1em;
+
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -21,22 +26,27 @@ html {
 }
 
 .header {
+  grid-area: 1 / 1 / 2 / 7;
   background-color: #006157;
 }
 
 .sidebar {
+  grid-area: 2 / 1 / 7 / 2;
   background-color: #005B94;
 }
 
 .nav {
+  grid-area: 2 / 2 / 3 / 7;
   background-color: #642cde;
 }
 
 .article {
+  grid-area: 3 / 2 / 7 / 7;
   background-color: #7E1DC3;
 }
 
 .footer {
+  grid-area: 7 / 1 / 8 / 7;
   background-color: #393f4d;
 }
 
